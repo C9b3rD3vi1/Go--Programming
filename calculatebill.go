@@ -33,10 +33,10 @@ func calculateFinalBill(costPerMessage float64, numMessages int) float64 {
 
 func calculateDiscountRate(numMessages int) float64 {
 
-	if numMessages >= 5000 {
+	if numMessages > 5000 {
 		return 0.2
 		
-	} else if numMessages <= 1000 {
+	} else if numMessages > 1000 {
 		return 0.1
 	} else{
 		
